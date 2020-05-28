@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <title>2N2T SHOES - CHỈ CÓ CHẤT</title>
+        <link rel="shortcut icon" href="/webroot/img/icon title.ico" type="image/x-icon">
+        <link rel="stylesheet" href="webroot/web.css">
+        <link rel="stylesheet" href="webroot/bootstrap4/css/bootstrap.css">
+        <link href="webroot/font/Font Awesome/css/all.css" rel="stylesheet">
+        <script src="webroot/jquery/jquery.js"></script>
+        <script src="webroot/bootstrap4/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div class="container-fluid header">
+            <div class="row ">
+                <div class="col-md-4">
+                <a href="../2N2TSHOP_THANH/index.php" title=""><img class="logoimg" src="webroot/img/logo2n2t.png" ></a>
+                </div>
+                <div class="col-md-3 ">
+                    <form action="index.php?view=timkiem" method="POST" accept-charset="utf-8">
+                        <div class="input-group tk">
+                            <input class="form-control border-secondary py-2" name="search" type="search" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit" name="btsearch">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>  
+                </div>
+                <div class="col-md-1 "></div>
+                <div class="col-md-2 lh"><a href="?view=hethong">HỆ THỐNG CỬA HÀNG</a></div>
+                <div class="col-md-1  lh"><a href="?view=hethong">Liên Hệ</a></div> 
+            </div>
+        </div>
+        <div class="container-fluid menu" id="menu">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class=" menu-l">
+                        <li class="w"><a href="index.php" title="">Danh Mục <i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu"></ul>
+                        </li>
+                        <li class="a2 w"></li>
+                        <li class="w"><a href="index.php" title="">Sản Phẩm <i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                            </ul>
+                        </li>
+                        <li class="a2 w"></li>
+                        <li class="w"><a href="?view=about" title="">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 ">
+                    <ul class="menu-r">
+                         <li class="w"><a href="index.php?view=login" >Đăng Nhập</a> 
+                        </li>
+                        <li ><a href="index.php?view=dangky" title="">Đăng Ký</a></li>
+                        <li class="cart1  r">
+                            <a href="index.php?view=cart" title="">
+                                Giỏ Hàng <i class="fa fa-shopping-bag"></i>
+                            </a>
+                             
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        
+            <!--HẾT HEADER-->
+
+
+
+             <!--body-->
+             <div class="container-fluid ">
+                <div class="container">
+                    <div class="row boderbot" >
+                        <h3 class="col-md-10 ft"> </h3>
+                        <select name="SortBy" id="SortBy" onchange="validateSelectBox(this)" class="form-control form-control-sm col-2 form-horizontal">
+                            <option value="default">Sắp xếp theo giá</option>
+                            <option>Gía từ thấp tới cao</option>
+                            <option >Giá từ cao tới thấp</option>
+                        </select>
+                    </div>
+
+                    <div class="row boderbot ">
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/VANS_02.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Vans 02</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">3.000.000</mark></p>
+                                         <p >VANS</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/NIKE_GD.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >NIKE_GD</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">8.800.000</mark></p>
+                                         <p >NIKE</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/VANS_03.png"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Vans 03</h6> 
+                                         <p class="ft2 "><mark class="badge-danger "> 2.100.000</mark></p>
+                                         <p >VANS</p>
+                                    </div>	
+                            </div>
+                        </div>
+
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/Chuck 70 Specialty Suede Utility.PNG"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Chuck 70 Specialty Suede Utility</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">9.000.000</mark></p>
+                                         <p >Converse</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/VANS_04.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Vans 04</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">4.000.000</mark></p>
+                                         <p >VANS</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/VANS_05.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Vans 05</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">5.000.000</mark></p>
+                                         <p >VANS</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/BALEN DAD.PNG"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >BALANCE DAD</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">1.500.000</mark></p>
+                                         <p >BALANCIAGA</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/PUMA_01.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >PUMA_01</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">7.000.000</mark></p>
+                                         <p >PUMA</p>
+                                    </div>	
+                            </div>
+                        </div>
+
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/PUMA_02.jpg"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >PUMA_02</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">3.900.000</mark></p>
+                                         <p >PUMA</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/BALENCIAGA TRIPLE S.PNG"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >BALENCIAGA TRIPLE S</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">12.000.000</mark></p>
+                                         <p >BANLENCIGA</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/Black OG Old Skool LX.PNG"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >Vans Black</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">3.300.000</mark></p>
+                                         <p >VANS</p>
+                                    </div>	
+                            </div>
+                        </div>
+                        <div class="col-3 item">
+                            <div class="item2">
+                                    <div><img src="webroot/img/sanpham/NikeDropTypePremium.PNG"  class="img-circle img-thumbnail item-img"></div>
+                                    <div class="item-text ft text-center">
+                                        <h6 >NikeDropTypePremium</h6> 
+                                         <p class="ft2 "><mark class="badge-danger ">7.100.000</mark></p>
+                                         <p >NIKE</p>
+                                    </div>	
+                            </div>
+                        </div>
+
+
+
+                    </div>   
+
+
+
+            <!--Hết body-->
+
+
+
+            <!--FOOTER-->
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 ">
+                       <img class="margin imglogo" src="webroot/img/logogiay.png" >
+                       <h6 class="chutrang"><i class="fas fa-home"></i>&#160;&#160; Quận Tân Bình - Thành phố Hồ Chí Minh</h6>
+                       <h6 class="chutrang2"><i class="fas fa-phone-alt"></i> &#160;&#160; 0912.345.678 </h6>
+                       <h3 class="chutrang"><i class="fas fa-store"></i> &#160;&#160; Mở cửa 24 / 7</h3>
+                       <img  class="margin imglogo2" src="webroot/img/dathongbao.png" alt="HÌNH CỦA BỘ CÔNG THƯƠNG">
+                   </div>
+                   <div class="col-5">
+                       <h6 class="chutrang3 " style="color:#000000;">DỊCH VỤ - HỔ TRỢ KHÁCH HÀNG</h6>
+                       <h6 class="chutrang"><i class="fas fa-truck"></i>&#160;&#160; Giao Hàng Toàn Quốc</h6>
+                       <h6 class="chutrang"><i class="fas fa-shipping-fast"></i>&#160;&#160; Giao Hàng Nhanh</h6>
+                       <h6 class="chutrang"><i class="fas fa-archive"></i>&#160;&#160; Đóng gói kỹ càng</h6>
+                       <h6 class="chutrang"><i class="far fa-thumbs-up"></i>&#160;&#160; Cam kết chất lượng</h6>
+                       <h6 class="chutrang2"><i class="fas fa-phone-alt"></i> &#160;&#160;Chăm sóc khách hàng : 0912.345.678</h6>
+                       <h1 style="color: #333;">
+                           <i class="fab fa-cc-mastercard"></i> &#160;&#160;<i class="fab fa-cc-visa"></i> &#160;&#160;
+                           <i class="fab fa-cc-stripe"></i>&#160;&#160;<i class="fab fa-cc-jcb"></i>
+                       </h1>
+                   </div>
+                   <div class="col-2">
+                       <h6 class="chutrang3 " style="color:#8A2BE2;">FOLLOW US </h6>
+                       <label class="fb" ><a href="https://www.facebook.com/2N2T-Shoes-104458091228983/?refid=12" target="_blank">
+                                               <i class="fab fa-facebook-square"style="color:#8A2BE2;"></i></a>&#160;&#160;
+                                         <a href="https://www.instagram.com/2n2t_shoes/"  target="_blank">
+                                                 <i class="fab fa-instagram" style="color:#8A2BE2;" ></i></a>
+                       </label>
+                       <img class="margin imglogo3" src="webroot/img/1.png" >
+                   </div>
+                   <div class="col-12">
+                       <br>
+                       <h3 class="chutrang text-center">Copyrights © 2020 by 2N2T SHOP. Powered by 2N2T Groups</h3>
+                   </div>
+                </div>
+        </div>
+          <!--Hết footer-->
+    </body>
+</html>
